@@ -18,7 +18,7 @@
 	<hr />
 	
 	DataTAG::Bean Refrence DEMO
-	<s:bean name="in.async.struts2.demo.DataBean" var="objRef">
+	<s:bean name="in.async.strutspractice.demo.DataBean" var="objRef">
 		<s:param name="fname" value="%{'java'}"/>
 		<s:param name="lname" value="%{'core'}" />
 	</s:bean>
