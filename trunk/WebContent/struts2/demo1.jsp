@@ -56,8 +56,39 @@
 	</s:iterator>
 	
 	<hr />
-	Control-Tag::Append-Demo::Merge-Demo::Generator-Demo<br />
+	Control-Tag::Append-Demo<br />
+	<s:append var="aVar">
+		<s:param value="list" />
+		<s:param value="list" />
+	</s:append>
+	<s:iterator var="itr" status="sItr" value="#aVar">
+		<s:property value='#itr'/>
+		<s:property value='#sItr.even'/>
+		<br />
+	</s:iterator>
+	
+	<hr/>Control-Tag::MErge-Demo<br />
+	<s:merge var="mVar">
+		<s:param value="list" />
+		<s:param value="list" />
+	</s:merge>
+	<s:iterator var="itr" status="sItr" value="#mVar">
+		<s:property value='#itr'/>
+		<s:property value='#sItr.even'/>
+		<br />
+	</s:iterator>
 	
 	
+	<hr />Control-Tag::Generator-Demo<br />
+	<s:generator var="gVar" separator="," val="%{'a,b,c'}" />
+	<s:iterator var="itr" value="#gVar">
+		<s:property value="#itr"/><br />
+	</s:iterator>
+	
+	
+	<hr />STATIC METHOD DEMO::<br />
+	Static::<s:property value='@in.async.struts2.demo.StaticUtil@DEFAULT' /><br />
+	VS::<s:property value="@vs@USER"/><br />
+	STATICWAY::<s:property value="%{@in.async.struts2.demo.Struts2Demo@USER}" />
 </body>
 </html>
