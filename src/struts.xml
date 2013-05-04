@@ -4,13 +4,25 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 
 <struts>
-
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
-    <constant name="struts.devMode" value="false" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.ognl.allowStaticMethodAccess" value="true"/> 
 
     <package name="default" namespace="/" extends="struts-default">
-		<action name="demo1" class="in.async.struts2.demo.Struts2Demo" method="demo1">
+		<action name="demo1" class="in.async.strutspractice.demo.StrutsDemo" method="demo1">
 			<result name="success">/struts2/demo1.jsp</result>
+		</action>
+		
+		<action name="demo2" class="in.async.strutspractice.demo.StrutsDemo" method="demo2">
+			<result name="success">/struts2/demo2.jsp</result>
+		</action>
+		
+		<action name="demo3" class="in.async.strutspractice.demo.StrutsDemo" method="demo3">
+			<result name="success">/struts2/demo3.jsp</result>
+		</action>
+		
+		<action name="demo4" class="in.async.strutspractice.demo.StrutsDemo" method="demo1">
+			<result name="success">/struts2/demo4.jsp</result>
 		</action>
     </package>
 
