@@ -23,6 +23,17 @@
 		
 		<action name="demo4" class="in.async.strutspractice.demo.StrutsDemo" method="demo1">
 			<result name="success">/struts2/demo4.jsp</result>
+			<result name="input">/struts2/valdiation-error.jsp</result>
+		</action>
+		
+		<action name="demo5" class="in.async.strutspractice.demo.StrutsDemo" method="demo5">
+			<result name="success">/struts2/demo5.jsp</result>
+			<result name="input">/struts2/valdiation-error.jsp</result>
+		</action>
+		
+		<action name="demo6" class="in.async.strutspractice.demo.StrutsDemo" method="demo6">
+			<result name="success">/struts2/valdiation-error.jsp</result>
+			<result name="input">/struts2/valdiation-error.jsp</result>
 		</action>
     </package>
 
