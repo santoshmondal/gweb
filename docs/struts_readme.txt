@@ -35,4 +35,8 @@ Syntax-1
 	
 Syntax-2
 	<s:property value='%{"somevalue"}' />
-	If you wanna to provide some static data or data to be evaluated use the struts expression. 
+	If you wanna to provide some static data or data to be evaluated use the struts expression.
+	
+	
+	More Reading::
+	http://struts.apache.org/development/2.x/docs/tag-syntax.html 

@@ -9,3 +9,7 @@ Keep in mind here the name of the action is the default action.
 STEP3::Now make sure one dummy file with the 'hello.action' exist in your web application folder in the specified path. 
 
 Thats it!!!	
+
+More Reading
+http://javadeveloperjournal.blogspot.in/2011/05/creating-struts-2-welcome-page.html
+http://stackoverflow.com/questions/12087779/why-welcome-file-list-is-not-working-if-i-remove-struts2-action-extension
