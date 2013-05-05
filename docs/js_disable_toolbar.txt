@@ -1,0 +1,8 @@
+I don't think you can hide the address bar on a user's current window but you can create a pop up that has the address bar hidden:
+var popup = window.open("http://someurl", "myPopup", 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=120,height=120')
+
+More Reading::
+https://developer.mozilla.org/en-US/docs/DOM/window.open 
+http://stackoverflow.com/questions/2909645/open-new-popup-window-without-address-bars-in-firefox-ie
+http://stackoverflow.com/questions/5664992/how-to-hide-address-bar-in-firefox-using-javascript-window-open
+http://www.coderanch.com/t/118289/HTML-CSS-JavaScript/hide-address-bar
