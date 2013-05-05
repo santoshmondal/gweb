@@ -15,3 +15,4 @@ Restart Tomcat.
 MOER LINK::
 http://whatwouldnickdo.com/wordpress/157/tomcat-images-directory/
 http://tomcat.apache.org/tomcat-7.0-doc/config/context.html
+http://harkiran-howtos.blogspot.in/2009/08/map-external-directory-into-your.html
