@@ -1,0 +1,11 @@
+Step1::To make an action to be the default action with application name in struts2. Figure out the action which you want
+to make the default action. Lets assume the name of the action is 'hello'.
+Step2::Next we need to make an entry into the web.xm file under tag welcome-file-list as following:
+	<welcome-file-list>
+		<welcome-file>/struts2/hello.action</welcome-file>
+	</welcome-file-list>
+Keep in mind here the name of the action is the default action. 
+
+STEP3::Now make sure one dummy file with the 'hello.action' exist in your web application folder in the specified path. 
+
+Thats it!!!	
