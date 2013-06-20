@@ -1,0 +1,36 @@
+#wrapper {
+	
+}
+
+#header{
+	
+}
+
+#left{
+	
+}
+
+
+#content{
+	
+}
+
+#right{
+	
+}
+
+#footer{
+	
+}
+
+#popup {
+	 background-color: greenyellow;
+    border: 7px solid black;
+    color: red;
+    display: none;
+    font-weight: bold;
+    height: 70px;
+    padding-top: 23px;
+    text-align: center;
+    width: 200px;
+}

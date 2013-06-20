@@ -1,0 +1,20 @@
+#divwrapper{
+	background: none repeat scroll 0 0 grey;
+    border: 1px solid red;
+    height: 100px;
+    width: 400px;
+    display:none; 	
+}
+
+
+#divclose {
+    cursor: pointer;
+    float: right;
+}
+
+#divmsg {
+    clear: both;
+    text-align: center;
+}
+
+
