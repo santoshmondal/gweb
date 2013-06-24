@@ -26,6 +26,7 @@
  * 8. Cookie Object
  * 9. jQuery Objects
  * 10.jQuery UI
+ * 11. IMAGE TEST
  */
 var rediff = {
 	service : {},

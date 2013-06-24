@@ -23,8 +23,8 @@ loop2();
 
 
 // loop through an object; this===window
-for(prop in this) {
-	console.log(prop + "::" + this[prop]);
+for(prop in Node) {
+	console.log(prop + "::" + Node[prop]);
 }
 
 

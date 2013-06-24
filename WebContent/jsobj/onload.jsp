@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Java Script and Objects</title>
 	
-	<script type="text/javascript" src="loop.js"></script>
+	<script type="text/javascript" src="nineth_session.js"></script>
 </head>
 <body>
 
