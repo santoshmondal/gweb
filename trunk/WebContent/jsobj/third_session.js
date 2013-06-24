@@ -1,3 +1,8 @@
+/**
+ * Object constructor Function.
+ * Static property.
+ */
+
 window.onload = function() {
 	
 	// 1::Object Constructor
@@ -13,9 +18,10 @@ window.onload = function() {
 			return this.password;
 		};
 	};
+	Student.staticProp = "Some staic data";
 	
 	var sObj = new Student("raj", "raja");
-	window.alert(sObj.getUname());
+	window.alert(sObj.getUname() + "::" + Student.staticProp);
 	
 	
 	
