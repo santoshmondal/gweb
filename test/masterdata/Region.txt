@@ -1,0 +1,47 @@
+Afghanistan
+Andaman and Nicobar
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bangladesh
+Bihar
+Chandigarh
+Chhattisgarh
+China
+Dadra and Nagar Haveli
+Daman and Diu
+Delhi
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Iran
+Iraq
+Israel
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Lakshadweep
+Madhya Pradesh
+Maharashtra
+Manipur
+Meghalaya
+Mizoram
+Nagaland
+Nepal
+None
+Orissa
+Pakistan
+Pondicherry
+Punjab
+Rajasthan
+Sikkim
+Sri Lanka
+Tamil Nadu
+Tripura
+UK
+USA
+Uttar Pradesh
+Uttaranchal
+West Bengal
