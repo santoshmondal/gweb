@@ -37,4 +37,9 @@
 		</action>
     </package>
 
+	<package name="dupload" namespace="/" extends="json-default">
+		<action name="fileUpload" class="in.async.strutspractice.fupload.FileUpload" method="fileUpload">
+			<result type='json'/>
+		</action>
+	</package>
 </struts>
