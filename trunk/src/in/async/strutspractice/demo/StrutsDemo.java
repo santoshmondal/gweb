@@ -1,10 +1,16 @@
 package in.async.strutspractice.demo;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import org.apache.struts2.ServletActionContext;
 
 import com.opensymphony.xwork2.ActionSupport;
 
@@ -19,6 +25,7 @@ public class StrutsDemo extends ActionSupport {
 	private String email;
 	private List<String> list;
 	private Map<String, String> map;
+	private InputStream inputStream;
 	private final Date now = new Date();
 
 	/**
@@ -71,6 +78,21 @@ public class StrutsDemo extends ActionSupport {
 		return SUCCESS;
 	}
 
+	public String stringStream1() {
+		setInputStream(new ByteArrayInputStream("Hellooooo".getBytes()));
+		return SUCCESS;
+	}
+
+	public String stringStream2() {
+		try {
+			PrintWriter out = ServletActionContext.getResponse().getWriter();
+			out.write("HEllo");
+			out.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return NONE;
+	}
 	public String getName() {
 		return name;
 	}
@@ -126,5 +148,11 @@ public class StrutsDemo extends ActionSupport {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	public InputStream getInputStream() {
+		return inputStream;
+	}
 
+	public void setInputStream(InputStream inputStream) {
+		this.inputStream = inputStream;
+	}
 }
