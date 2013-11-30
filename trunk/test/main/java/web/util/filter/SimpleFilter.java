@@ -22,6 +22,7 @@ import common.util.CommonUtil;
 public class SimpleFilter implements Filter {
 
 	private static final Logger LOG = Logger.getLogger(SimpleFilter.class);
+	private FilterConfig config;
 
 	/**
 	 * @see Filter#destroy()
@@ -34,13 +35,12 @@ public class SimpleFilter implements Filter {
 	 * @see Filter#doFilter(ServletRequest, ServletResponse, FilterChain)
 	 */
 	@Override
-	public void doFilter(ServletRequest request, ServletResponse response,
-			FilterChain chain) throws IOException, ServletException {
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
+			ServletException {
 
 		long stime = System.currentTimeMillis();
 		HttpServletResponse httpResponse = (HttpServletResponse) response;
-		SimpleResponseWrapper responseWrapper = new SimpleResponseWrapper(
-				httpResponse);
+		SimpleResponseWrapper responseWrapper = new SimpleResponseWrapper(httpResponse);
 		chain.doFilter(request, responseWrapper);
 
 		String contentType = response.getContentType();
@@ -54,8 +54,7 @@ public class SimpleFilter implements Filter {
 		 */
 
 		long etime = System.currentTimeMillis();
-		LOG.info("Response processing::" + contentType + "," + reqdata1 + ","
-				+ CommonUtil.getTimeDifference(stime, etime));
+		LOG.info("Response processing::" + contentType + "," + reqdata1 + "," + CommonUtil.getTimeDifference(stime, etime));
 	}
 
 	/**
@@ -63,7 +62,7 @@ public class SimpleFilter implements Filter {
 	 */
 	@Override
 	public void init(FilterConfig fConfig) throws ServletException {
-		// TODO Auto-generated method stub
+		config = fConfig;
 	}
 
 }
