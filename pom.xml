@@ -43,6 +43,7 @@
 			<artifactId>dbstore</artifactId>
 			<version>0.0.3</version>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
@@ -84,5 +85,13 @@
 			<artifactId>spring-tx</artifactId>
 			<version>3.2.0.RELEASE</version>
 		</dependency>
+
+		<!-- DWR -->
+		<dependency>
+			<groupId>org.directwebremoting</groupId>
+			<artifactId>dwr</artifactId>
+			<version>3.0.M1</version>
+		</dependency>
+
 	</dependencies>
 </project>
