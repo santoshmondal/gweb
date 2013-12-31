@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Java Script and Objects</title>
 	
-	<script type="text/javascript" src="nineth_session.js"></script>
+	<script type="text/javascript" src="fourth_session.js"></script>
 </head>
 <body>
 
@@ -17,7 +17,7 @@ Hello js objects.
 	</div>
 	
 	<br />
-	INPUT::<input type='text' name='text1' onclick="javascript:abc(this);return false;" value='raj'/>
+	INPUT::<input type='text' name='text1' onclick="javascript:abc(this);return false;" value='rajaaa'/>
 	
 	<br />
 	blah blah,,,,

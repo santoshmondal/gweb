@@ -67,6 +67,8 @@ function abc(obj){
 	obj.style.color = 'blue';
 }
 
+abc();
+
 function bcd() {
 	alert(this);
 	this.bala = "balaji";
@@ -94,7 +96,7 @@ testArgument("raja", "raj", "rajdeep");
 function testEvent() {
 	alert("Event test::");
 	alert(window.event);
-	alert(window.event.type);
+	//alert(window.event.type);
 }
 
 testEvent();
