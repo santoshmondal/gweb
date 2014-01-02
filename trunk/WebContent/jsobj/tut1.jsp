@@ -45,8 +45,19 @@
 	
 	
 	Some Input::<input id='i1' type='text'  onclick="javascript:test.call(this); return false;" /><br />
-	Radio::<input type='radio' name='dept' value='it' checked="checked" onclick="test.call();return false;"/>
-	<input type='radio' name='dept' value='dev' onclick="test.call();return false;"/>
+	Radio::<br/>Read<input type='radio' name='dept' value='it' onchange="test.call(this);return false;"/>
+	Write<input type='radio' name='dept' value='dev' onchange="test.call(this);return false;"/>
+
+	<br /><br />Now Checkbox<br />
+	Check1<input id='c1' type="checkbox" name='deptc' value='devc1' onchange="test.call(this);return false;"/>
+	Check2<input id='c2' type="checkbox" name='deptc' value='devc2' onchange="test.call(this);return false;"/>
+	Check3<input id='c3' type="checkbox" name='deptc' value='devc3' onchange="test.call(this);return false;"/>
+	
+	<br /><br />Another Checkbox<br />
+	Check1<input id='c21' type="checkbox" name='check2' value='devc21' onchange="test.call(this);return false;"/>
+	Check2<input id='c22' type="checkbox" name='check2' value='devc22' onchange="test.call(this);return false;"/>
+	Check3<input id='c23' type="checkbox" name='check2' value='devc23' onchange="test.call(this);return false;"/>
+	
 
 </body>
 
@@ -77,9 +88,19 @@
 	someMethod.call(core.util); 	// using function context, overriding this
 	
 	function test() {
-		console.log(this)
-		console.log(this.value);
-		// console.log(this.getAttribute('value')); //for div/a
+		console.log(this + this.name);
+		/* if(this.checked) {
+			console.log(this.id);
+			console.log(this.value);
+		} */
+		
+		$("input[name="+this.name+"][type=checkbox]:checked").each (function() {
+			   console.log( $(this).val() );
+		});
+		
+		$("input[name="+this.name+"][type=radio]:checked").each (function() {
+			   console.log( $(this).val() );
+		});
 	}
 	
 	
