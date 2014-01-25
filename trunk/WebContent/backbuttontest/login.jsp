@@ -14,8 +14,8 @@
 	}
 %>
 
-
-<body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload="">
+<body>
+<!-- <body onload="noBack();" onpageshow="if (event.persisted) noBack();" onunload=""> -->
 	<form action='/gweb/login.do' method="post">
 		FNAME::<input type="text" name='fname'><br />
 		PASSWORD::<input type="text" name='password'><br />
