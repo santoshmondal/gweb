@@ -11,8 +11,14 @@
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-ui-1.10.3.custom.min.js"></script>
 
 	<!-- jquer css -->
-	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/vader/jquery-ui-1.10.3.custom.min.css"></link>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/smoothness/jquery-ui.css"></link>
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/css/smoothness/jquery.ui.theme.css"></link>
 	<style type="text/css">
+
+
+.ui-widget {
+    font-size: 12px !important;
+}		
 		
 #searchdiv {
     background-color: infobackground;
@@ -58,7 +64,32 @@
 	Check2<input id='c22' type="checkbox" name='check2' value='devc22' onchange="test.call(this);return false;"/>
 	Check3<input id='c23' type="checkbox" name='check2' value='devc23' onchange="test.call(this);return false;"/>
 	
+	
+	<br /><br />
+	<button id='bdialogid' onclick="javascript:showHideDialog.call(this, 'dialog-form');return false;">DIALOG</button>
 
+	<div id="dialog-confirm" title="Empty the recycle bin?">
+  		<p>
+  			
+  			These items will be permanently deleted and cannot be recovered. Are you sure?
+  		</p>
+	</div>
+	
+	
+	<div id="dialog-form" title="Create new user">
+	  <p class="validateTips">All form fields are required.</p>
+	 
+	  <form>
+	  <fieldset>
+	    <label for="name">Name</label>
+	    <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+	    <label for="email">Email</label>
+	    <input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all">
+	    <label for="password">Password</label>
+	    <input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all">
+	  </fieldset>
+	  </form>
+	</div>
 </body>
 
 <script type="text/javascript">
@@ -143,7 +174,30 @@
 	});
 		
 		
-
+	function showHideDialog(dialogdiv) {
+		console.log(this.id + "::" + dialogdiv);
+		
+		$("#"+dialogdiv).dialog({
+			//resizable: false,
+		   	height:240,
+		    //modal: true,
+		    buttons: {
+		    	"OHKAY" : function() {
+		    		console.log("OHKAY CLICKEDD!!!");
+		    		$(this).dialog("close");	
+		    	}, 
+		    	"CANCELL" : function() {
+		    		$(this).dialog("close");
+		    		console.log("CANCELLED CLICKEDD!!!");
+		    	}, 
+		    	"CONFIRM" : function() {
+		    		$(this).dialog("close");
+		    		console.log("Confirm CLICKEDD!!!");
+		    	}
+		    }
+		});
+	}
+	
 	
 </script>
 </html>
